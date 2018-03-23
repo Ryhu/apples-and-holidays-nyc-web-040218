@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season}:"
     holidays.each do |holidayName, supply|
       squish = supply.join(", ")
-      putst "  #{holidayName}: #{squish}"
+      puts "  #{holidayName}: #{squish}"
     end
   end
 
