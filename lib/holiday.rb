@@ -95,7 +95,12 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holidays|
     flag = false
     holidays.each do |holiday, stuff|
-      
+      if stuff.include?("BBQ")
+        flag = true
+      end
+    end
+    if flag
+      result << season
     end
   end
 end
