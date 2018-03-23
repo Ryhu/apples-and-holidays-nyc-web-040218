@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.capitalize}:"
     holidays.each do |holidayName, supply|
       squish = supply.join(", ")
-      annoying = holidayName.to_s.split("_").map(&:+"asdf").join(" ")
+      annoying = holidayName.to_s.split("_").map(&:capitalize).join(" ")
       
       puts "  #{annoying}: #{squish}"
     end
